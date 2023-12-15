@@ -6,9 +6,15 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      sm: "480px",
+      md: "786px",
+      lg: "1020px",
+      xl: "1440px",
+    },
     extend: {
       fontFamily: {
-        sans: ["Rethink Sans", "sans-serif"],
+        sans: ["Montserrat", "sans-serif"],
         serif: ["Rethink Sans", "sans-serif"],
       },
     },
