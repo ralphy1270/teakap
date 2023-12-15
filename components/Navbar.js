@@ -33,10 +33,21 @@ const Navbar = () => {
               <div className="hover-home w-0 h-[3px] bg-gray-900"></div>
             </div>
           </li>
-          <li>
-            <a href="#about">About</a>
-            <div className="w-full">
-              <div className="h-[3px] w-full bg-gray-900"></div>
+          <li className="group">
+            <a
+              onMouseEnter={() => {
+                linkHover("hover-about");
+              }}
+              onMouseLeave={() => {
+                linkNotHover("hover-about");
+              }}
+              className="focus:none font-bold"
+              href="#about"
+            >
+              About
+            </a>
+            <div className="flex flex-col items-center w-full" ref={scope}>
+              <div className="hover-about w-0 h-[3px] bg-gray-900"></div>
             </div>
           </li>
           <li>
